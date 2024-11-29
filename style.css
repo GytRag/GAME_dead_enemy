@@ -1,0 +1,134 @@
+body {
+    width: 600px;
+}
+
+
+/* GAME FIELD*/
+.gameArea {
+    position: relative;
+    width: 600px;
+    height: 600px;
+    border: 1px solid black;
+}
+.gameOver {
+    position: absolute;
+    z-index: 999;
+    font-size: 50px;
+    color: red;
+    top: 275px;
+    left: 185px;
+    display: none;
+}
+
+/*ENEMY*/
+.enemy {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 75px;
+    font-size: 50px;
+    text-align: center;
+    position: absolute;
+    top: calc(50% - 40px);
+    left: calc(50% - 40px);;
+}
+
+.enemyBtn {
+    cursor: pointer;
+}
+
+.hpTotal {
+    width: 65px;
+    height: 10px;
+    border: 1px solid black;
+}
+.hp {
+    width: 100%;
+    height: 100%;
+    background-color: green;
+}
+
+/*HELP FIELD*/
+
+.helpContainer {
+    display: flex;
+    border: 1px solid black;
+    padding: 10px;
+    justify-content: space-around;
+}
+
+.helpShoot {
+    font-size: 50px;
+    cursor: pointer;
+    display: flex;
+}
+
+.helpShoot:hover {
+    background-color: #ececec;
+}
+
+
+.helpShoot span {
+    display: none;
+    font-size: 12px;
+    padding: 5px;
+}
+
+.helpShoot:hover > span {
+    display: block;
+}
+
+
+
+/*DIV BTN FIELD*/
+.startBtn {
+    margin: 20px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.divBtn {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.damageBtn {
+    display: flex;
+    gap: 10px
+}
+
+.points {
+    font-size: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.moreDamage {
+    font-size: 50px;
+    border: 1px solid black;
+    cursor: pointer;
+    position: relative;
+}
+.moreDamage span {
+    font-size: 14px;
+    position: absolute;
+    display: none;
+    top: 80px;
+    left: 5px;
+}
+
+
+.moreDamage:hover {
+    background-color: #ececec;
+}
+
+.moreDamage:hover > span {
+    display: block;
+}
+
+.active {
+    background-color: #9aff9a;
+}
